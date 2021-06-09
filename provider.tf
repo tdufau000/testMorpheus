@@ -8,12 +8,7 @@ terraform {
 }
 
 provider "aws" {
-  region     = local.vpc_options.region
+  region     = "eu-west-1"
   access_key = var.access_key
   secret_key = var.secret_key
-
-  assume_role {
-    # The role ARN within Account B to AssumeRole into.
-    role_arn = "arn:aws:iam::${local.vpc_options.aws_account}:role/OrganizationAccountAccessRole"
-  }
 }
