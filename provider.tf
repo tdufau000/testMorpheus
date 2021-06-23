@@ -14,6 +14,6 @@ provider "aws" {
   
   assume_role {
     # The role ARN within Account B to AssumeRole into.
-    role_arn = "arn:aws:iam::161331958293:role/Morpheus_AssumeRole"
+    role_arn = "arn:aws:iam::161331958293:role/OrganizationAccountAccessRole"
   }
 }
